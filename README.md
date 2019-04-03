@@ -83,56 +83,74 @@ cv2.imwrite(testdir+imagename+'_ns_inpaint.jpeg', ns_inpaint)
 
 我們使用以下這五張圖來做三種不同的實驗
 
-<img src="apple.jpg" width="200" height="200" style="float: left" />
-<img src="appletree.jpg" width="200" height="200" style="float: left" />
-<img src="orange.jpg" width="200" height="200" style="float: left" />
-<img src="orangetree.jpg" width="200" height="200" style="float: left" />
-<img src="face.jpg" width="200" height="200" />
+<table width="300" border="1">
+    <tr>
+        <td> <img src="apple.jpg" width="200" height="200" /> </td>
+        <td> <img src="appletree.jpg" width="200" height="200" /> </td>
+        <td> <img src="orange.jpg" width="200" height="200" /> </td>
+        <td> <img src="orangetree.jpg" width="200" height="200" /> </td>
+        <td> <img src="face.jpg" width="200" height="200" /> </td>
+    </tr>
+</table>
 
 #### Experiment 1 -- random thin line
 
 由下面結果可以發現不論使哪種圖片或是方法 inpaint 過後的圖片質量皆不差。
 
-<img src="test1/apple.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/orange.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/face.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test1/face.jpg_tesla_inpaint.jpeg" width="200" height="200" />
+<table width="300" border="1">
+    <tr>
+        <td> <img src="test1/apple.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/orange.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/face.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/face.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+    </tr>
+</table>
+
+
 
 #### Experiment 2 -- random thick line
 
 由於未知的範圍增加了，相比於 Experiment 1，圖片就會有明顯類似馬賽克的 defect 或是 mask 波紋，如 face 圖片中的眼睛就不見了，但還是可以看出原本圖片的樣貌，若是周圍背景顏色較為單一，也不會與原圖相差太多。
 
-<img src="test2/apple.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/orange.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/face.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test2/face.jpg_tesla_inpaint.jpeg" width="200" height="200" />
+<table width="300" border="1">
+    <tr>
+        <td> <img src="test2/apple.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/orange.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/face.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test2/face.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+    </tr>
+</table>
 
 ### Experiment 3 -- erase object
 
 先前有看過 nvidia 的[影片](https://www.youtube.com/watch?v=tU484zM3pDY)，因此想做類似的實驗不出意料地，大部分的結果並不是很好，只有在被刪除的周圍顏色背景差不多時，才會有比較真實的結果，但如果是小部分不同的像素想要移除，這依然是個不錯的方法。
 
-<img src="test3/apple.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/orange.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/face.jpg_ns_inpaint.jpeg" width="200" height="200" style="float: left" />
-<img src="test3/face.jpg_tesla_inpaint.jpeg" width="200" height="200" />
+<table width="300" border="1">
+    <tr>
+        <td> <img src="test3/apple.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/orange.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/face.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test3/face.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+    </tr>
+</table>
 
 ## Analysis
 ## Conclusion
