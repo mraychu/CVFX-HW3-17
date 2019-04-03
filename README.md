@@ -86,14 +86,14 @@ cv2.imwrite(testdir+imagename+'_ns_inpaint.jpeg', ns_inpaint)
 <table width="300" border="1">
     <tr>
         <td> <img src="apple.jpg" width="310" height="165" /> </td>
-        <td> <img src="appletree.jpg" width="400" height="300" /> </td>
-    </tr>
+        <td> <img src="appletree.jpg" width="310" height="165" /> </td>
+    /tr>
     <tr>
-        <td> <img src="orange.jpg" width="444" height="334" /> </td>
+        <td> <img src="face.jpg" width="310" height="165" /> </td>
+        <td> <img src="orange.jpg" width="310" height="165" /> </td>
+    /tr>
+    <tr>
         <td> <img src="orangetree.jpg" width="150" height="225" /> </td>
-    </tr>
-    <tr>
-        <td> <img src="face.jpg" width="460" height="292" /> </td>
     </tr>
 </table>
 
@@ -103,16 +103,20 @@ cv2.imwrite(testdir+imagename+'_ns_inpaint.jpeg', ns_inpaint)
 
 <table width="300" border="1">
     <tr>
-        <td> <img src="test1/apple.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/apple.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/appletree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/appletree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/orange.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/orange.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/orangetree.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/orangetree.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/face.jpg_ns_inpaint.jpeg" width="200" height="200" /> </td>
-        <td> <img src="test1/face.jpg_tesla_inpaint.jpeg" width="200" height="200" /> </td>
+        <td> <img src="test1/apple.jpg_ns_inpaint.jpeg" width="310" height="165" /> </td>
+        <td> <img src="test1/apple.jpg_tesla_inpaint.jpeg" width="310" height="165" /> </td>
+        <td> <img src="test1/appletree.jpg_ns_inpaint.jpeg" width="310" height="165" /> </td>
+        <td> <img src="test1/appletree.jpg_tesla_inpaint.jpeg" width="310" height="165" /> </td>
+    </tr>
+    <tr>
+        <td> <img src="test1/face.jpg_ns_inpaint.jpeg" width="310" height="165" /> </td>
+        <td> <img src="test1/face.jpg_tesla_inpaint.jpeg" width="310" height="165" /> </td>
+        <td> <img src="test1/orange.jpg_ns_inpaint.jpeg" width="310" height="165" /> </td>
+        <td> <img src="test1/orange.jpg_tesla_inpaint.jpeg" width="310" height="165" /> </td>
+    </tr>
+    <tr>
+        <td> <img src="test1/orangetree.jpg_ns_inpaint.jpeg" width="150" height="225" /> </td>
+        <td> <img src="test1/orangetree.jpg_tesla_inpaint.jpeg" width="150" height="225" /> </td>
     </tr>
 </table>
 
