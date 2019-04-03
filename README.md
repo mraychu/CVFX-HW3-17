@@ -83,13 +83,13 @@ cv2.imwrite(testdir+imagename+'_ns_inpaint.jpeg', ns_inpaint)
 
 我們使用以下這五張圖來做三種不同的實驗
 
-<table width="300" border="1">
+<table width="1000" border="1">
     <tr>
-        <td> <img src="apple.jpg" width="200" height="200" /> </td>
-        <td> <img src="appletree.jpg" width="200" height="200" /> </td>
-        <td> <img src="orange.jpg" width="200" height="200" /> </td>
-        <td> <img src="orangetree.jpg" width="200" height="200" /> </td>
-        <td> <img src="face.jpg" width="200" height="200" /> </td>
+        <td> <img src="apple.jpg" width="310" height="165" /> </td>
+        <td> <img src="appletree.jpg" width="400" height="300" /> </td>
+        <td> <img src="orange.jpg" width="444" height="334" /> </td>
+        <td> <img src="orangetree.jpg" width="150" height="225" /> </td>
+        <td> <img src="face.jpg" width="460" height="292" /> </td>
     </tr>
 </table>
 
