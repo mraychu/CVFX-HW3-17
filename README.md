@@ -55,7 +55,7 @@
 ![](https://i.imgur.com/dWUoo1O.png)
 ![](https://i.imgur.com/caeDK6u.png)
 
-我們在兩個 Layer 中，將 Ceiling 表現最好的兩個 unit 產生出來的結果互相比較。在 IoU 的部分，可以觀察到在更深的 Layer 中，mask 與 Segmantation 有更高的重疊率(IoU)，mask 出來的結果更好，代表經過 越多層 Layer 之後生成的結果的確有改善，當然也有些例外。
+我們在兩個 Layer 中，將 Ceiling 表現最好的兩個 unit 產生出來的結果互相比較。在 IoU 的部分，可以觀察到在更深的 Layer 中，mask 與 Segmantation 有更高的重疊率(IoU)，mask 出來的結果更好，代表經過越多層 Layer 之後生成的結果的確有改善，當然也有些例外。
 
 ### 3. Compare with other method
 #### Method: [Image Inpainting](https://docs.opencv.org/3.4.1/df/d3d/tutorial_py_inpainting.html)
