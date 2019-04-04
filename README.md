@@ -21,7 +21,7 @@
 ![](https://i.imgur.com/RMlpkyp.png)|![](https://i.imgur.com/bPUuAUK.png)|![](https://i.imgur.com/w2QVaZu.png)|![](https://i.imgur.com/F7VHRNr.png)
 
 我們對範例提供的照片做了 draw/remove 的動作。從結果可以觀察到，在對於合理區域進行 draw/remove 物件時，效果都不錯。例如在天空區域把雲消除，或是畫出草叢，結果都蠻合理，只有 remove door 的效果不明顯，比較像把本來的窗戶或門進行變形。但如果在一個不合理的區域進行增減，例如在建築上畫出天空或是雲，都會變成奇怪的結果。如果對於並沒有該物件的區域進行移除，例如對沒有圓頂的房子進行 remove dome，或是對房子本身 remove tree，房子都會發生一些變化，但都在合理範圍。
-根據 paper 裡面的內容，remove 應該就是讓針對某區域的 units U 強制為 0 (<img src="http://chart.googleapis.com/chart?cht=tx&chl=$r_U,_P=0$" style="border:none;">),而 draw 則是讓該 unit 的值強制為 k(<img src="http://chart.googleapis.com/chart?cht=tx&chl=$r_U,_P=k$" style="border:none;">)來進行對 units 關閉/開啟的動作，同一個物件(如 tree)也可能是由好幾個 units 一起控制。我們畫的筆刷範圍則是指定某區域，但由於關閉或開啟了數個 units，影響的範圍則不限於筆刷畫的範圍，可能讓周圍的影像也一起受到影響。
+根據 paper 裡面的內容，remove 應該就是讓針對某區域的 units U 強制為 0 (<img src="http://chart.googleapis.com/chart?cht=tx&chl=$r_U_P=0$" style="border:none;">),而 draw 則是讓該 unit 的值強制為 k(<img src="http://chart.googleapis.com/chart?cht=tx&chl=$r_U_P=k$" style="border:none;">)來進行對 units 關閉/開啟的動作，同一個物件(如 tree)也可能是由好幾個 units 一起控制。我們畫的筆刷範圍則是指定某區域，但由於關閉或開啟了數個 units，影響的範圍則不限於筆刷畫的範圍，可能讓周圍的影像也一起受到影響。
 
 ### 2. Dissect any GAN model and analyze what you find
 我們測試的是範例中提供的 Karras 的 bedroom model，分別檢查 Layer 4 和 Layer 7，size 使用 1000。
