@@ -34,9 +34,11 @@
 |![](https://i.imgur.com/hI8YNZQ.png)|![](https://i.imgur.com/Da20KuZ.png)
 
 **Layer 4**
+
 ![](https://i.imgur.com/K5QbbEX.png)
 
 **Layer 7**
+
 ![](https://i.imgur.com/jXXkJNC.png)
 
 由上述結果可以觀察到，在 mid layer (Layer 4) 中，objects 和 parts (部分的 object )的數量都比 deep layer (Layer 7) 中更多，與論文中的觀察相符合。Layer 4 和 Layber 7 中，大部分 unit 生成的特徵都還是 Semantic Segmantation 出來的具體物件為主，如天花板、床、枕頭、窗戶、地板等，少部分才是材質，可能要再檢查更深的 Layer 才會有更抽象的特徵，例如材質。另外，我們也發現，同樣的 units 在不同的 Layer 中，負責生成的 Object 或是 Part 也會變化。
