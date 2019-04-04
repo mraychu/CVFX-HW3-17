@@ -41,7 +41,7 @@
 
 ![](https://i.imgur.com/jXXkJNC.png)
 
-由上述結果可以觀察到，在 mid layer (Layer 4) 中，objects 和 parts (部分的 object )的數量都比 deep layer (Layer 7) 中更多，與論文中的觀察相符合。Layer 4 和 Layber 7 中，大部分 unit 生成的特徵都還是 Semantic Segmantation 出來的具體物件為主，如天花板、床、枕頭、窗戶、地板等，少部分才是材質，可能要再檢查更深的 Layer 才會有更抽象的特徵，例如材質。另外，我們也發現，同樣的 units 在不同的 Layer 中，負責生成的 Object 或是 Part 也會變化。
+由上述結果可以觀察到，在 mid layer (Layer 4) 中，objects 和 parts (部分的 object )的數量都比 deep layer (Layer 7) 中更多，與論文中的觀察相符合。Layer 4 和 Layer 7 中，大部分 unit 生成的特徵都還是 Semantic Segmantation 出來的具體物件為主，如天花板、床、枕頭、窗戶、地板等，少部分則是材質，我們認為可能要再檢查更深的 Layer 才會有更抽象的特徵，例如更精細的材質。另外，我們也發現同樣的 units 在不同的 Layer 中，負責生成的 object 或是 part 也有一定程度的變化，有的 IoU 會變好，而有些會變差，這些圈選出來的範圍都會影響後續 unit 的學習效果。
 
 **Layer 4 Ceiling**
 > unit 177 (object) iou 0.25
@@ -55,7 +55,7 @@
 ![](https://i.imgur.com/dWUoo1O.png)
 ![](https://i.imgur.com/caeDK6u.png)
 
-我們在兩個 Layer 中，將 Ceiling 表現最好的兩個 unit 產生出來的結果互相比較。在 IoU 的部分，可以觀察到在更深的 Layer 中，mask 與 Segmantation 有更高的重疊率(IoU)，mask 出來的結果更好，說明 Layer 越多層之後生成的結果的確有改善。
+我們在兩個 Layer 中，將 Ceiling 表現最好的兩個 unit 產生出來的結果互相比較。在 IoU 的部分，可以觀察到在更深的 Layer 中，mask 與 Segmantation 有更高的重疊率(IoU)，mask 出來的結果更好，代表經過 越多層 Layer 之後生成的結果的確有改善，當然也有些例外。
 
 ### 3. Compare with other method
 #### Method: [Image Inpainting](https://docs.opencv.org/3.4.1/df/d3d/tutorial_py_inpainting.html)
