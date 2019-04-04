@@ -83,44 +83,21 @@ cv2.imwrite(testdir+imagename+'_ns_inpaint.jpeg', ns_inpaint)
 
 我們使用以下這五張圖來做三種不同的實驗
 
-<table width="300" border="1">
-    <tr>
-        <td> <img src="apple.jpg" width="310" height="165" /> </td>
-        <td> <img src="appletree.jpg" width="310" height="165" /> </td>
-    </tr>
-    <tr>
-        <td> <img src="face.jpg" width="310" height="165" /> </td>
-        <td> <img src="orange.jpg" width="310" height="165" /> </td>
-    </tr>
-    <tr>
-        <td> <img src="orangetree.jpg" width="150" height="225" /> </td>
-    </tr>
-</table>
+| Apple | Apple Tree | Face | Orange | Orange Tree |
+| ----------------- | --------------- |--------------- |--------------- |--------------- |
+|![](https://imgur.com/mDJec4b.png)|![](https://imgur.com/d1rOwRn.png)|![](https://imgur.com/aIsanvf.png)|![](https://imgur.com/djPiDXz.png)|![](https://imgur.com/IUCS9m8.png)
 
 #### Experiment 1 -- random thin line
 
 由下面結果可以發現不論使哪種圖片或是方法 inpaint 過後的圖片質量皆不差。
 
-<table width="300" border="1">
-    <tr>
-        <td> <img src="test1/apple.jpg_ns_inpaint.jpeg" width="350" height="180" /> </td>
-        <td> <img src="test1/apple.jpg_tesla_inpaint.jpeg" width="350" height="180" /> </td>
-        <td> <img src="test1/appletree.jpg_ns_inpaint.jpeg" width="350" height="180" /> </td>
-        <td> <img src="test1/appletree.jpg_tesla_inpaint.jpeg" width="350" height="180" /> </td>
-    </tr>
-    <tr>
-        <td> <img src="test1/face.jpg_ns_inpaint.jpeg" width="350" height="180" /> </td>
-        <td> <img src="test1/face.jpg_tesla_inpaint.jpeg" width="350" height="180" /> </td>
-        <td> <img src="test1/orange.jpg_ns_inpaint.jpeg" width="350" height="180" /> </td>
-        <td> <img src="test1/orange.jpg_tesla_inpaint.jpeg" width="350" height="180" /> </td>
-    </tr>
-    <tr>
-        <td> <img src="test1/orangetree.jpg_ns_inpaint.jpeg" width="150" height="225" /> </td>
-        <td> <img src="test1/orangetree.jpg_tesla_inpaint.jpeg" width="150" height="225" /> </td>
-    </tr>
-</table>
-
-
+| ns | tesla 
+| ----------------- | ---------------
+|![](https://imgur.com/m1EhD9E.png)|![](https://imgur.com/gSxx53R.png)
+|![](https://imgur.com/MiAc8lo.png)|![](https://imgur.com/GxUbXo7.png)
+|![](https://imgur.com/cQrRHci.png)|![](https://imgur.com/fxjJjOu.png)
+|![](https://imgur.com/lb6DpI8.png)|![](https://imgur.com/icEzxY6.png)
+|![](https://imgur.com/banDVMs.png)|![](https://imgur.com/mx6rDKy.png)
 
 #### Experiment 2 -- random thick line
 
